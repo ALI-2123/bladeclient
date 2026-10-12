@@ -305,8 +305,9 @@
 
 <script>
   // Every Download button downloads the installer that sits in the same folder as this page.
-  document.querySelectorAll("[data-download]").forEach((a) => {
-  a.href = "https://github.com/ALI-2123/bladeclient/releases/latest";
+ document.querySelectorAll("[data-download]").forEach((a) => {
+  a.href = "https://github.com/ALI-2123/bladeclient/releases/latest/download/Blade-Client-Setup.exe";
+  a.removeAttribute("target");
 });
 
   // Floating embers
